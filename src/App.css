@@ -1,7 +1,66 @@
 .App {
+  background-color: red;
   text-align: center;
 }
+.font-face-gm {
+  font-family: "PoppinsBold";
+ }
+ .slice {
+  --all:0px;
+  
+ 
+  display:inline-block;
+  background-repeat:no-repeat;
+  -webkit-mask:
+     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+   -webkit-mask-size:50.5% 50.5%;
+   -webkit-mask-repeat:no-repeat;
+   --top-left:20%;
+}
 
+ .box {
+  --all:0px;
+  --b:#dce9fb;
+  width:755px;
+  height:496px;
+  border-style:solid;
+  border-color: var(--b);
+  border-width: 10px;
+  margin-left: 250px;
+  
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  -webkit-mask:
+     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+   -webkit-mask-size:50.5% 50.5%;
+   -webkit-mask-repeat:no-repeat;
+   --top-left:50px;
+  
+}
+
+.contact {
+  --all:0px;
+  width:1163px;
+  height:562.5px;
+  
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  -webkit-mask:
+     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+   -webkit-mask-size:50.5% 50.5%;
+   -webkit-mask-repeat:no-repeat;
+   --top-left:50px;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +71,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +96,7 @@
     transform: rotate(360deg);
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
